@@ -19,9 +19,6 @@ Key Links:
 * [Contributing](https://dev.qgroundcontrol.com/en/contribute/)
 * [License](https://github.com/mavlink/qgroundcontrol/blob/master/COPYING.md)
 
-#### RIIS LLC
-#### December 15, 2021
-
 # Hide Settings in QGroundControl Based on User Access Type
 
 A how-to guide with code samples on configuring and building your own custom QGroundControl
