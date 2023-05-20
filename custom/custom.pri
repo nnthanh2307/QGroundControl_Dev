@@ -55,8 +55,6 @@ QML_IMPORT_PATH += \
 SOURCES += \
     $$PWD/src/AccessType.cpp \
     $$PWD/src/AccessTypeConfig.cpp \
-    $$PWD/src/CustomAPMFirmwarePlugin.cc \
-    $$PWD/src/CustomAPMFirmwarePluginFactory.cc \
     $$PWD/src/CustomFirmwarePluginFactory.cc \
     $$PWD/src/CustomPX4FirmwarePlugin.cc \
     $$PWD/src/CustomCorePlugin.cc \
@@ -66,8 +64,6 @@ SOURCES += \
 HEADERS += \
     $$PWD/src/AccessType.h \
     $$PWD/src/AccessTypeConfig.h \
-    $$PWD/src/CustomAPMFirmwarePlugin.h \
-    $$PWD/src/CustomAPMFirmwarePluginFactory.h \
     $$PWD/src/CustomFirmwarePluginFactory.h \
     $$PWD/src/CustomPX4FirmwarePlugin.h \
     $$PWD/src/CustomCorePlugin.h \
