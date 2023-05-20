@@ -25,40 +25,6 @@ A how-to guide with code samples on configuring and building your own custom QGr
 application. We’ll be changing the UI based on a passcode that we supply to unlock different levels of
 access.
 
-## Environment Set-Up
-
-If you already have the required software installed, double-check that you have the correct versions. Then
-you may continue to the section titled ‘Configuring the Project.’
-
-## Required Software
-
-- Microsoft Visual Studio 2019
-- Qt/Qt Creator
-
-## Installing Visual Studio 2019
-
-1. Follow this link to download the last version of Visual Studio 2019:
-    a. https://my.visualstudio.com/Downloads?q=visual%20studio%202019&wt.mc_id=
-       o~msft~vscom~older-downloads
-2. Once downloaded, run the installer and check the box labeled, “Desktop development
-    with C++”
-3. Finish installing by checking the Install box
-
-## Installing Qt Creator
-
-1. Follow this link, scroll down to the section titled “Looking for Qt binaries?”
-    a. https://www.qt.io/download-open-source
-2. Click the button labeled “Download the Qt Online Installer”
-3. A page will show up with a green button labeled “Download”. Click it and the QT Online
-    Installer will download
-4. After downloading, launch the installer
-5. Log in / Create an account for Qt
-6. Check the box claiming you are an individual
-7. Hit next until you reach the installation folder
-8. Check the box labeled “Custom Installation” and hit next
-9. Select the dropdown for Qt and check the box labeled “5.15.2”
-10. Finish installation by hitting next until it is complete
-
 ## Configuring the Project
 
 1. Clone the QGroundControl repository found here:
