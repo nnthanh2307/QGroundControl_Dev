@@ -2,7 +2,12 @@
 #include <string>
 #ifndef ACCESSTYPE_H
 
-enum AccessType { Basic, Expert, Factory };
+enum AccessType
+{
+    Basic,
+    Expert,
+    Factory
+};
 
 std::string accessTypeString(AccessType accessType);
 

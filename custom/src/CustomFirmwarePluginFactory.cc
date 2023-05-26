@@ -7,7 +7,6 @@ CustomFirmwarePluginFactory CustomFirmwarePluginFactoryImp;
 CustomFirmwarePluginFactory::CustomFirmwarePluginFactory()
     : _pluginInstance(nullptr)
 {
-
 }
 
 QList<QGCMAVLink::FirmwareClass_t> CustomFirmwarePluginFactory::supportedFirmwareClasses() const
@@ -17,10 +16,12 @@ QList<QGCMAVLink::FirmwareClass_t> CustomFirmwarePluginFactory::supportedFirmwar
     return firmwareClasses;
 }
 
-FirmwarePlugin* CustomFirmwarePluginFactory::firmwarePluginForAutopilot(MAV_AUTOPILOT autopilotType, MAV_TYPE /*vehicleType*/)
+FirmwarePlugin *CustomFirmwarePluginFactory::firmwarePluginForAutopilot(MAV_AUTOPILOT autopilotType, MAV_TYPE /*vehicleType*/)
 {
-    if (autopilotType == MAV_AUTOPILOT_PX4) {
-        if (!_pluginInstance) {
+    if (autopilotType == MAV_AUTOPILOT_PX4)
+    {
+        if (!_pluginInstance)
+        {
             _pluginInstance = new CustomPX4FirmwarePlugin;
         }
         return _pluginInstance;

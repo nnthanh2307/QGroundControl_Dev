@@ -29,11 +29,11 @@ void PasscodeManager::_initPasscodes()
     fstream passcodeConfigFile;
     passcodeConfigFile.open(this->_configFile, ios::in);
     string line;
-//    int i = 0;
+    //    int i = 0;
     while (getline(passcodeConfigFile, line))
     {
         this->_passcodes.push_back(QString::fromStdString(line));
-//        i++;
+        //        i++;
     }
     passcodeConfigFile.close();
     qDebug() << "Passcodes Loaded:";
