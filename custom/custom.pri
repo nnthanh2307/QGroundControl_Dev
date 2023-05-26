@@ -57,6 +57,7 @@ SOURCES += \
     $$PWD/src/AccessTypeConfig.cpp \
     $$PWD/src/CustomFirmwarePluginFactory.cc \
     $$PWD/src/CustomPX4FirmwarePlugin.cc \
+    $$PWD/src/CustomAPMFirmwarePluginFactory.cc \
     $$PWD/src/CustomCorePlugin.cc \
     $$PWD/src/PasscodeMenu/PasscodeManager.cc
 
@@ -66,6 +67,7 @@ HEADERS += \
     $$PWD/src/AccessTypeConfig.h \
     $$PWD/src/CustomFirmwarePluginFactory.h \
     $$PWD/src/CustomPX4FirmwarePlugin.h \
+    $$PWD/src/CustomAPMFirmwarePluginFactory.h \
     $$PWD/src/CustomCorePlugin.h \
     $$PWD/src/PasscodeMenu/PasscodeManager.h
 

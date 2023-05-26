@@ -146,5 +146,5 @@ SetupPage {
             } // Row
         } // Column
     } // Component
-} // SetupPahe
+} // SetupPage
 

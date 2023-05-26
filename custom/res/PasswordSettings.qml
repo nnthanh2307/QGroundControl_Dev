@@ -65,8 +65,6 @@ Rectangle {
                 onClicked: {
                     accessType = PasscodeManager.submitPasscode(passcodeField.text)
                     CustomCorePlugin.setAccessType(accessType)
-//                    console.log("access:" + accessType)
-//                    console.log("currentAccessType: ", currentAccessType)
                     if (accessType != "" && accessType != currentAccessType) {
                         passcodeField.text = ""
                         currentAccessType = accessType
