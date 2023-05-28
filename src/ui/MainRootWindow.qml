@@ -163,6 +163,10 @@ ApplicationWindow {
         showTool(qsTr("Vehicle Setup"), "SetupView.qml", "/qmlimages/Gears.svg")
     }
 
+    function showSwarmTool() {
+        showTool(qsTr("Swarm Setup"), "SwarmView.qml", "/qmlimages/SwarmUAV.svg")
+    }
+
     function showSettingsTool() {
         showTool(qsTr("Application Settings"), "AppSettings.qml", "/res/QGCLogoWhite")
     }
@@ -308,6 +312,21 @@ ApplicationWindow {
                             if (!mainWindow.preventViewSwitch()) {
                                 toolSelectDialog.close()
                                 mainWindow.showSetupTool()
+                            }
+                        }
+                    }
+
+                    SubMenuButton {
+                        id:                 swarmButton
+                        height:             toolSelectDialog._toolButtonHeight
+                        Layout.fillWidth:   true
+                        text:               qsTr("Swarm Setup")
+                        imageColor:         qgcPal.text
+                        imageResource:      "/qmlimages/SwarmUAV.svg"
+                        onClicked: {
+                            if (!mainWindow.preventViewSwitch()) {
+                                toolSelectDialog.close()
+                                mainWindow.showSwarmTool()
                             }
                         }
                     }

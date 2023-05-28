@@ -27,5 +27,6 @@
         <file alias="QGroundControl/Controls/FlightModeMenu.qml">res/Custom/CustomFlightModeMenu.qml</file>
         <file alias="QGroundControl/Controls/MainToolBar.qml">res/Custom/CustomMainToolBar.qml</file>
         <file alias="PasswordSettings.qml">res/PasswordSettings.qml</file>
+        <file alias="SwarmView.qml">res/SwarmView.qml</file>
     </qresource>
 </RCC>
