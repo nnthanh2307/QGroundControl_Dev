@@ -229,7 +229,11 @@ Rectangle {
                 setupIndicator:     false
                 checked:            true
                 exclusiveGroup:     setupButtonGroup
+<<<<<<< HEAD
                 text:               qsTr("Control")
+=======
+                text:               qsTr("Setting")
+>>>>>>> 04e419132c67cc1d10a8316972a40a2c0cd5d553
                 Layout.fillWidth:   true
 
                 onClicked: showSummaryPanel()
@@ -246,6 +250,7 @@ Rectangle {
 
                 onClicked: showPanel(this, "VideoUpdate.qml")
             }
+<<<<<<< HEAD
 
             // SubMenuButton {
             //     id:                 px4FlowButton
@@ -296,6 +301,8 @@ Rectangle {
             //     onClicked:          showPanel(this, "SetupParameterEditor.qml")
             // }
 
+=======
+>>>>>>> 04e419132c67cc1d10a8316972a40a2c0cd5d553
         }
     }
 
