@@ -29,6 +29,6 @@
         <file alias="PasswordSettings.qml">res/PasswordSettings.qml</file>
         <file alias="SwarmView.qml">res/SwarmView.qml</file>
         <file alias="VideoUpdate.qml">res/VideoUpdate.qml</file>
-        <file>VideoComponent.qml</file>
+        <file alias="VideoComponent.qml">res/Custom/VideoComponent.qml</file>
     </qresource>
 </RCC>
