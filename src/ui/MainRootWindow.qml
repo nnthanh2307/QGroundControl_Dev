@@ -164,7 +164,7 @@ ApplicationWindow {
     }
 
     function showSwarmTool() {
-        showTool(qsTr("Swarm Setup"), "SwarmView.qml", "/qmlimages/SwarmUAV.svg")
+        showTool(qsTr("Swarm UAV"), "SwarmView.qml", "/qmlimages/SwarmUAV.svg")
     }
 
     function showSettingsTool() {
