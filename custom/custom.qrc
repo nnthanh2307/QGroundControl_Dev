@@ -28,7 +28,7 @@
         <file alias="QGroundControl/Controls/MainToolBar.qml">res/Custom/CustomMainToolBar.qml</file>
         <file alias="PasswordSettings.qml">res/PasswordSettings.qml</file>
         <file alias="SwarmView.qml">res/SwarmView.qml</file>
-        <file alias="VehicleControl.qml">res/VehicleControl.qml</file>
         <file alias="VideoUpdate.qml">res/VideoUpdate.qml</file>
+        <file>VideoComponent.qml</file>
     </qresource>
 </RCC>

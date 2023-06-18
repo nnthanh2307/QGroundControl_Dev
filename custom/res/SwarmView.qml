@@ -53,7 +53,7 @@ Rectangle {
             // } else {
             panelLoader.setSource("VehicleControl.qml")
             // }
-        } 
+        }
         // else if (QGroundControl.multiVehicleManager.parameterReadyVehicleAvailable) {
         //     panelLoader.setSourceComponent(missingParametersVehicleSummaryComponent)
         // } else {
@@ -119,23 +119,23 @@ Rectangle {
         }
     }
 
-    // Component {
-    //     id: noComponentsVehicleSummaryComponent
-    //     Rectangle {
-    //         color: qgcPal.windowShade
-    //         QGCLabel {
-    //             anchors.margins:        _defaultTextWidth * 2
-    //             anchors.fill:           parent
-    //             verticalAlignment:      Text.AlignVCenter
-    //             horizontalAlignment:    Text.AlignHCenter
-    //             wrapMode:               Text.WordWrap
-    //             font.pointSize:         ScreenTools.mediumFontPointSize
-    //             text:                   qsTr("%1 does not currently support setup of your vehicle type. ").arg(QGroundControl.appName) +
-    //                                     "If your vehicle is already configured you can still Fly."
-    //             onLinkActivated: Qt.openUrlExternally(link)
-    //         }
-    //     }
-    // }
+     Component {
+         id: noComponentsVehicleSummaryComponent
+         Rectangle {
+             color: qgcPal.windowShade
+             QGCLabel {
+                 anchors.margins:        _defaultTextWidth * 2
+                 anchors.fill:           parent
+                 verticalAlignment:      Text.AlignVCenter
+                 horizontalAlignment:    Text.AlignHCenter
+                 wrapMode:               Text.WordWrap
+                 font.pointSize:         ScreenTools.mediumFontPointSize
+                 text:                   qsTr("%1 does not currently support setup of your vehicle type. ").arg(QGroundControl.appName) +
+                                         "If your vehicle is already configured you can still Fly."
+                 onLinkActivated: Qt.openUrlExternally(link)
+             }
+         }
+     }
 
     // Component {
     //     id: disconnectedVehicleSummaryComponent
@@ -229,11 +229,7 @@ Rectangle {
                 setupIndicator:     false
                 checked:            true
                 exclusiveGroup:     setupButtonGroup
-<<<<<<< HEAD
                 text:               qsTr("Control")
-=======
-                text:               qsTr("Setting")
->>>>>>> 04e419132c67cc1d10a8316972a40a2c0cd5d553
                 Layout.fillWidth:   true
 
                 onClicked: showSummaryPanel()
@@ -250,29 +246,28 @@ Rectangle {
 
                 onClicked: showPanel(this, "VideoUpdate.qml")
             }
-<<<<<<< HEAD
 
-            // SubMenuButton {
-            //     id:                 px4FlowButton
-            //     exclusiveGroup:     setupButtonGroup
-            //     visible:            QGroundControl.multiVehicleManager.activeVehicle ? QGroundControl.multiVehicleManager.activeVehicle.vehicleLinkManager.primaryLinkIsPX4Flow : false
-            //     setupIndicator:     false
-            //     text:               qsTr("PX4Flow")
-            //     Layout.fillWidth:   true
-            //     onClicked:          showPanel(this, "PX4FlowSensor.qml")
-            // }
+//             SubMenuButton {
+//                 id:                 px4FlowButton
+//                 exclusiveGroup:     setupButtonGroup
+//                 visible:            QGroundControl.multiVehicleManager.activeVehicle ? QGroundControl.multiVehicleManager.activeVehicle.vehicleLinkManager.primaryLinkIsPX4Flow : false
+//                 setupIndicator:     false
+//                 text:               qsTr("PX4Flow")
+//                 Layout.fillWidth:   true
+//                 onClicked:          showPanel(this, "PX4FlowSensor.qml")
+//             }
 
-            // SubMenuButton {
-            //     id:                 joystickButton
-            //     imageResource:      "/qmlimages/Joystick.png"
-            //     setupIndicator:     true
-            //     setupComplete:      joystickManager.activeJoystick ? joystickManager.activeJoystick.calibrated : false
-            //     exclusiveGroup:     setupButtonGroup
-            //     visible:            _fullParameterVehicleAvailable && joystickManager.joysticks.length !== 0
-            //     text:               qsTr("Joystick")
-            //     Layout.fillWidth:   true
-            //     onClicked:          showPanel(this, "JoystickConfig.qml")
-            // }
+//             SubMenuButton {
+//                 id:                 joystickButton
+//                 imageResource:      "/qmlimages/Joystick.png"
+//                 setupIndicator:     true
+//                 setupComplete:      joystickManager.activeJoystick ? joystickManager.activeJoystick.calibrated : false
+//                 exclusiveGroup:     setupButtonGroup
+//                 visible:            _fullParameterVehicleAvailable && joystickManager.joysticks.length !== 0
+//                 text:               qsTr("Joystick")
+//                 Layout.fillWidth:   true
+//                 onClicked:          showPanel(this, "JoystickConfig.qml")
+//             }
 
             // Repeater {
             //     id:     componentRepeater
@@ -300,9 +295,6 @@ Rectangle {
             //     Layout.fillWidth:   true
             //     onClicked:          showPanel(this, "SetupParameterEditor.qml")
             // }
-
-=======
->>>>>>> 04e419132c67cc1d10a8316972a40a2c0cd5d553
         }
     }
 
