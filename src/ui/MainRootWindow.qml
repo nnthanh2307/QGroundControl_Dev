@@ -320,7 +320,7 @@ ApplicationWindow {
                         id:                 swarmButton
                         height:             toolSelectDialog._toolButtonHeight
                         Layout.fillWidth:   true
-                        text:               qsTr("Swarm Setup")
+                        text:               qsTr("Swarm UAV")
                         imageColor:         qgcPal.text
                         imageResource:      "/qmlimages/SwarmUAV.svg"
                         onClicked: {
